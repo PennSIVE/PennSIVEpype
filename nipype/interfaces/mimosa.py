@@ -89,7 +89,7 @@ class MIMoSA(BaseInterface):
                 probability_map = niftiarr(brainmask, 0)
                 probability_map[mimosa_candidate_mask == 1] = predictions
 
-                write_nii(probability_map, '$prob_map')
+                writenii(probability_map, '$prob_map')
                 """
             ).substitute(d)
 
